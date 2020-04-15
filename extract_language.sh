@@ -3,7 +3,8 @@
 VERSION=${1:-5.4}
 
 set -xE -o pipefail
-curl -s "https://api.wordpress.org/translations/core/1.0/?version=$VERSION" | jq -r '.translations[].language + " " + .translations[].package' > /tmp/langs
+curl -s "https://api.wordpress.org/translations/core/1.0/?version=$VERSION" \
+ | jq -r '.translations[] | .language + " " + .package' > /tmp/langs
 
 function _extract() {
   wget $2 -O /tmp/$1.zip
