@@ -2,6 +2,8 @@
 
 https://make.wordpress.org/polyglots/teams/
 
+dockerhub: https://hub.docker.com/repository/docker/getshifter/wp-languages
+
 ## Usage example
 
 with docker-compose
