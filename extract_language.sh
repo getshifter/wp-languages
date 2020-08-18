@@ -1,6 +1,6 @@
 #!/bin/bash
 
-VERSION=${1:-5.4}
+VERSION=${1:-5.5}
 
 set -xE -o pipefail
 curl -s "https://api.wordpress.org/translations/core/1.0/?version=$VERSION" \
