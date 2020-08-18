@@ -15,7 +15,7 @@ services:
     volumes:
       - plugindata:/path/to/wp-content/languages
   plugins:
-    image: getshifter/wp-languages:5.4
+    image: getshifter/wp-languages:5.5
     volumes:
       - languages:/srv/languages
 volumes:
@@ -25,7 +25,7 @@ volumes:
 multi-stage building
 
 ```
-FROM getshifter/wp-languages:5.4 as languages
+FROM getshifter/wp-languages:5.5 as languages
 RUN /bin/true
 
 FROM wordpress:latest
