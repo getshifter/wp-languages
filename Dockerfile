@@ -1,5 +1,5 @@
 FROM debian:10-slim
-ARG WP_VERSION="5.6"
+ARG WP_VERSION="5.8"
 
 RUN apt-get update && apt-get install -y unzip jq wget curl
 RUN mkdir -p /srv/languages
