@@ -24,5 +24,5 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
     - name: Build and Push the Docker image
       run: |
-        docker build . --file Dockerfile --tag wp-languages:${GH_BRANCHNAME}
-        docker push wp-languages:${GH_BRANCHNAME}
+        docker build . --file Dockerfile --tag getshifter/wp-languages:${GH_BRANCHNAME}
+        docker push getshifter/wp-languages:${GH_BRANCHNAME}
