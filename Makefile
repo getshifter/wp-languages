@@ -1,4 +1,4 @@
 .PHONY: build
 
 build:
-	docker build -t local/wp-languages . --no-cache
+	docker build --platform=linux/amd64 -t local/wp-languages . --no-cache
