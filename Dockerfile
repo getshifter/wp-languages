@@ -1,4 +1,4 @@
-FROM debian:10-slim
+FROM debian:11-slim
 ARG WP_VERSION="6.1"
 
 RUN apt-get update && apt-get install -y unzip jq wget curl
