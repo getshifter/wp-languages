@@ -31,9 +31,9 @@ jobs:
       matrix:
         branch:
           - main
-          - "5.9"
           - "6.0"
           - "6.1"
+          - "6.2"
 
     steps:
       - uses: actions/checkout@v3
