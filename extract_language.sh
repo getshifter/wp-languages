@@ -1,9 +1,9 @@
 #!/bin/bash
 
-VERSION=${1:-6.0}
+WP_VERSION=${1:-6.3}
 
 set -xE -o pipefail
-curl -s "https://api.wordpress.org/translations/core/1.0/?version=$VERSION" \
+curl -s "https://api.wordpress.org/translations/core/1.0/?version=$WP_VERSION" \
  | jq -r '.translations[] | .language + " " + .package' > /tmp/langs
 
 function _extract() {
