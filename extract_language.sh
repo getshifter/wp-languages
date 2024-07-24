@@ -1,6 +1,6 @@
 #!/bin/bash
 
-WP_VERSION=${1:-6.5}
+WP_VERSION=${1:-6.6}
 
 set -xE -o pipefail
 curl -s "https://api.wordpress.org/translations/core/1.0/?version=$WP_VERSION" \
